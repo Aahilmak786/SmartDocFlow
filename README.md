@@ -1,4 +1,4 @@
-# SmartDocFlow# SmartDocFlow - Intelligent Document Processing & Analysis Platform
+# SmartDocFlow - Intelligent Document Processing & Analysis Platform
 
 ## 🚀 Project Overview
 

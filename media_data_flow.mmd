@@ -1,0 +1,18 @@
+graph LR
+  A[User Uploads Files] --> B[Text Extraction (PDF/OCR/TXT)]
+  B --> C[Embeddings (Sentence Transformers)]
+  C --> D[(TiDB Serverless)]
+  D --> E{Search}
+  E -->|Vector| F[Vector Similarity]
+  E -->|Full-text| G[Full-text Search]
+  F --> H[LLM Analysis]
+  G --> H[LLM Analysis]
+  H --> I[External Actions]
+  I -->|Slack| J[Notifications]
+  I -->|Calendar| K[Events]
+  I -->|Webhook| L[Integrations]
+  H --> M[Summaries & Insights]
+  style D fill:#0ea5e9,stroke:#0369a1,stroke-width:2,color:#fff
+  style H fill:#a78bfa,stroke:#7c3aed,stroke-width:2,color:#fff
+
+

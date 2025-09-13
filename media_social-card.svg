@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0b1020"/>
+    </linearGradient>
+    <linearGradient id="a" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <rect x="60" y="60" width="1080" height="510" rx="24" fill="#0f172a" stroke="#334155"/>
+  <g transform="translate(100,120)">
+    <rect width="64" height="64" rx="12" fill="url(#a)"/>
+    <text x="80" y="42" fill="#e2e8f0" font-family="Inter,Segoe UI,Arial" font-size="40" font-weight="800">SmartDocFlow</text>
+    <text x="0" y="120" fill="#94a3b8" font-family="Inter,Segoe UI,Arial" font-size="24">Intelligent Document Processing & Multi-step Agentic Workflows</text>
+    <text x="0" y="170" fill="#a5b4fc" font-family="Inter,Segoe UI,Arial" font-size="20">Powered by TiDB Serverless Vector Search + OpenAI</text>
+    <g transform="translate(0,220)" fill="#cbd5e1" font-family="Inter,Segoe UI,Arial" font-size="18">
+      <text y="0">• Ingest PDFs/Images/Text → Extract → Embed → Store in TiDB</text>
+      <text y="34">• Vector + Full-text + Hybrid Search</text>
+      <text y="68">• LLM Analysis, Insights, Summaries</text>
+      <text y="102">• Slack/Calendar/Webhooks Automation</text>
+    </g>
+  </g>
+</svg>
+
+

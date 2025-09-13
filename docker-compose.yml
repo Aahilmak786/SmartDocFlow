@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  smartdocflow:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - TIDB_HOST=${TIDB_HOST}
+      - TIDB_PORT=${TIDB_PORT}
+      - TIDB_USER=${TIDB_USER}
+      - TIDB_PASSWORD=${TIDB_PASSWORD}
+      - TIDB_DATABASE=${TIDB_DATABASE}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - SLACK_BOT_TOKEN=${SLACK_BOT_TOKEN}
+      - SLACK_CHANNEL_ID=${SLACK_CHANNEL_ID}
+    volumes:
+      - ./uploads:/app/uploads
+    depends_on:
+      - frontend
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_API_URL=http://localhost:8000
+    volumes:
+      - ./frontend/src:/app/src
+      - ./frontend/public:/app/public
+    command: npm start
+
+
